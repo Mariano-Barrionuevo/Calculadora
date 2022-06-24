@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/a52f9a205f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+
+
+    <title>Calculadroa</title>
+</head>
+
+<body class="">
+
+    <div class="container">
+        <div class="calculadora">
+            <div class="titulo">
+                <h3 class="move">Calculadora</h3>
+            </div>
+            <div class="display">
+                <div id="valor-anterior"></div>
+                <div id="valor-actual"></div>
+            </div>
+            <button onclick="display.borrarTodo()" class="col-2 transparente">C</button>
+            <button onclick="display.porciento()" class="operador transparente" value="porcentaje">%</button>
+            <button class="operador transparente" value="dividir">/</button>
+
+            <button class="numero">7</button>
+            <button class="numero">8</button>
+            <button class="numero">9</button>
+            <button class="operador transparente" value="multiplicar">X</button>
+
+            <button class="numero">4</button>
+            <button class="numero">5</button>
+            <button class="numero">6</button>
+            <button class="operador transparente" value="restar">-</button>
+
+            <button class="numero">1</button>
+            <button class="numero">2</button>
+            <button class="numero">3</button>
+            <button class="operador transparente" value="sumar">+</button>
+
+            <button class="numero">0</button>
+            <button class="numero">.</button>
+            <button onclick="display.borrar()">&larr;</button>
+            <button class="operador azul" value="igual">=</button>
+        </div>
+    </div>
+
+
+    <script src=" Display.js" type="text/javascript"></script>
+    <script src="Calculadora.js" type="text/javascript"></script>
+    <script src="app.js" type="text/javascript"></script>
+    <script src="position.js"></script>
+</body>
+
+</html>
